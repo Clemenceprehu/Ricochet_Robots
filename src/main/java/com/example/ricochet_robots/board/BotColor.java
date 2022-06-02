@@ -6,4 +6,5 @@ public enum BotColor {
     public final String label;
     BotColor(String label) {
         this.label = label;
+    }
 }
