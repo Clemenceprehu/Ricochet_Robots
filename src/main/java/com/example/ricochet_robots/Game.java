@@ -4,6 +4,8 @@ import com.example.ricochet_robots.board.Board;
 import com.example.ricochet_robots.board.Cell;
 import com.example.ricochet_robots.board.ObjectiveColor;
 
+import java.util.Optional;
+
 public class Game {
     private Board gameBoard;
 
