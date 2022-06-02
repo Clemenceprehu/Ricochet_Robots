@@ -1,5 +1,9 @@
 package com.example.ricochet_robots;
 
+import com.example.ricochet_robots.board.Board;
+import com.example.ricochet_robots.board.Cell;
+import com.example.ricochet_robots.board.ObjectiveColor;
+
 public class Game {
     private Board gameBoard;
 
