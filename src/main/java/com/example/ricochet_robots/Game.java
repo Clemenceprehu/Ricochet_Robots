@@ -1,5 +1,7 @@
 package com.example.ricochet_robots;
 
+import java.awt.*;
+
 public class Game {
     private Board gameBoard;
 
