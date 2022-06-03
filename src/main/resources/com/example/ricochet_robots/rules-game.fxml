@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane opacity="0.88" prefHeight="550.0" prefWidth="900.0" styleClass="rules_background" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ricochet_robots.PageController">
+    <stylesheets>
+        <URL value="@StyleBoard.css" />
+    </stylesheets>
+   <children>
+      <Text fill="WHITE" layoutX="339.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les règles du jeux" wrappingWidth="236.22418212890625">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Une fois 4 planches assemblées pour former un plateau de jeu, les 4 robots decouleur sont placés aléatoirement sur le plateau. Les 17 jetons sont tournés facecachée à côté du plateau." wrappingWidth="833.6923522949219">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="37.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La partie commence lorsque l’on retourne le premier jeton et le sablier.L’objectif est d’amener le robot qui a la couleur de l’objectif sur la case objectif sur le plateau en effectuant le moins de déplacement. Pour ce faire, onpeut déplacer n’importe lequel des robots. Lorsque l’on avance un robot, il nepeut s’arrêter que lorsqu’il rencontre un obstacle (mur, bord du plateau, plaquecentrale, autre robot)." wrappingWidth="861.2478256225586">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button blendMode="GREEN" layoutX="723.0" layoutY="459.0" mnemonicParsing="false" onAction="#goGame" prefHeight="36.0" prefWidth="128.0" text="Lancer la partie">
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Button>
+      <Text layoutX="468.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Êtes-vous prêt ? ">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="37.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L’action de déplacer un robot horizontalement ou verticalement compte pour1, quel que soit le nombre de cases qu’il parcourt.Quand on a trouvé une solution, on indique le nombre de déplacement nécessaire. Le sablier démarre pour une durée de 30 secondes." wrappingWidth="878.1367225646973">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="37.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tant que le sabliertourne, on peut proposer un autre nombre de déplacement (supérieur ou inférieur). Une fois le temps écoulé, le joueur avec le plus petit nombre de déplacements montre sa solution. Si sa solution est correcte, il empoche le jetonObjectif en jeu. Les tuiles Robot sont alors déplacées en-dessous des nouvellespositions des Robots" wrappingWidth="861.2478256225586">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
